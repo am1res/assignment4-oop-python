@@ -19,7 +19,7 @@ class GpaAnalyser(DataAnalyser):
         super().__init__(students)
 
     def analyse(self):
-        gpas = [float(s["gpa"]) for s in self.students]
+        gpas = [float(s["GPA"]) for s in self.students]
         self.result = {
             "total_students": len(self.students),
             "average_gpa": round(sum(gpas) / len(gpas), 2),
