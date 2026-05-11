@@ -20,5 +20,5 @@ class DataLoader:
         print(f"\nFirst {n} rows:")
         print("-" * 30)
         for s in self.students[:n]:
-            print(f"{s['student_id']} | {s['age']} | {s['gender']} | {s['country']} | GPA: {s['gpa']}")
+            print(f"{s['student_id']} | {s['age']} | {s['gender']} | {s['country']} | GPA: {s['GPA']}")
         print("-" * 30)
