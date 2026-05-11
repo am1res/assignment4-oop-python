@@ -1,0 +1,24 @@
+import csv
+
+class DataLoader:
+    def __init__(self, filename):
+        self.filename = filename
+        self.students = []
+
+    def load(self):
+        print("Loading data...")
+        try:
+            with open(self.filename, newline="", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                self.students = list(reader)
+            print(f"Data loaded successfully: {len(self.students)} students")
+        except FileNotFoundError:
+            print(f"Error: {self.filename} not found.")
+        return self.students
+
+    def preview(self, n=5):
+        print(f"\nFirst {n} rows:")
+        print("-" * 30)
+        for s in self.students[:n]:
+            print(f"{s['student_id']} | {s['age']} | {s['gender']} | {s['country']} | GPA: {s['gpa']}")
+        print("-" * 30)
