@@ -4,7 +4,7 @@
 ```
 assignment4/
 ├── main.py
-├── students.csv          ← place your CSV here
+├── students.csv     
 ├── analytics/
 │   ├── __init__.py
 │   ├── file_manager.py
