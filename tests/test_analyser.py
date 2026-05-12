@@ -16,15 +16,15 @@ class TestAnalyser(unittest.TestCase):
 
     def setUp(self):
         self.sample = [
-            {"gpa": "3.8", "sleep_hours_per_night": "7", "country": "USA",
+            {"GPA": "3.8", "sleep_hours_per_night": "7", "country": "USA",
              "final_exam_score": "95", "study_hours_per_day": "4"},
-            {"gpa": "2.5", "sleep_hours_per_night": "5", "country": "India",
+            {"GPA": "2.5", "sleep_hours_per_night": "5", "country": "India",
              "final_exam_score": "72", "study_hours_per_day": "2"},
-            {"gpa": "3.9", "sleep_hours_per_night": "8", "country": "USA",
+            {"GPA": "3.9", "sleep_hours_per_night": "8", "country": "USA",
              "final_exam_score": "98", "study_hours_per_day": "5"},
-            {"gpa": "1.8", "sleep_hours_per_night": "4", "country": "Canada",
+            {"GPA": "1.8", "sleep_hours_per_night": "4", "country": "Canada",
              "final_exam_score": "55", "study_hours_per_day": "1"},
-            {"gpa": "3.5", "sleep_hours_per_night": "6", "country": "India",
+            {"GPA": "3.5", "sleep_hours_per_night": "6", "country": "India",
              "final_exam_score": "88", "study_hours_per_day": "3"},
         ]
 
